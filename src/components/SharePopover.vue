@@ -116,6 +116,7 @@ import VisuallyHidden from '@/components/VisuallyHidden.vue';
       .popover-button-close {
         color: white;
         background-color: var(--color-desaturated-dark-blue);
+        flex-shrink: 0;
         
         @media #{$laptop-and-bigger} {
           display: none;

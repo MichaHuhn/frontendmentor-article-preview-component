@@ -9,7 +9,7 @@ import SharePopover from '@/components/SharePopover.vue';
     </div>
     
     <div class="content">
-      <div class="text-content">
+      <hgroup class="text-content">
         <h1>
           Shift the overall look and feel by adding these wonderful
           touches to furniture in your home
@@ -19,16 +19,18 @@ import SharePopover from '@/components/SharePopover.vue';
           it felt slightly bare and uninviting. I’ve got some simple tips
           to help you make any room feel complete.
         </p>
-      </div>
+      </hgroup>
       
       <div class="share-section">
-        <div class="profile-picture-wrapper">
-          <img src="@/assets/images/avatar-michelle.jpg" alt="Profile picture of Michelle Appleton" class="profile-picture">
-        </div>
-        <div>
-          <div class="name">Michelle Appleton</div>
-          <div class="date">28 Jun 2020</div>
-        </div>
+        <figure>
+          <div class="profile-picture-wrapper">
+            <img src="@/assets/images/avatar-michelle.jpg" alt="Profile picture of Michelle Appleton" class="profile-picture">
+          </div>
+          <figcaption>
+            <p class="name">Michelle Appleton</p>
+            <p class="date">28 Jun 2020</p>
+          </figcaption>
+        </figure>
         
         <SharePopover class="share-button" />
       </div>
@@ -119,27 +121,33 @@ article {
       padding: 1.25rem 2.5rem 2rem;
     }
     
-    .profile-picture-wrapper {
-      flex-shrink: 0;
+    figure {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
       
-      .profile-picture {
-        width: 2.5rem;
-        border-radius: 100vmax;
+      .profile-picture-wrapper {
+        flex-shrink: 0;
+        
+        .profile-picture {
+          width: 2.5rem;
+          border-radius: 100vmax;
+        }
       }
-    }
-    
-    .name {
-      color: var(--color-very-dark-grayish-blue);
-      font-weight: 700;
-      line-height: calc(20 / 13 * 1em);
-      letter-spacing: calc(0.12 / 13 * 1em);
-    }
-    
-    .date {
-      color: var(--color-grayish-blue);
-      font-weight: 500;
-      line-height: calc(20 / 13 * 1em);
-      letter-spacing: calc(0.12 / 13 * 1em);
+      
+      .name {
+        color: var(--color-very-dark-grayish-blue);
+        font-weight: 700;
+        line-height: calc(20 / 13 * 1em);
+        letter-spacing: calc(0.12 / 13 * 1em);
+      }
+      
+      .date {
+        color: var(--color-grayish-blue);
+        font-weight: 500;
+        line-height: calc(20 / 13 * 1em);
+        letter-spacing: calc(0.12 / 13 * 1em);
+      }
     }
     
     .share-button {
