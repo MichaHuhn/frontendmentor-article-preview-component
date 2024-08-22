@@ -1,0 +1,11 @@
+@use 'sass:math';
+
+$breakpoint-tablet-min: 550px;
+$breakpoint-laptop-min: 1100px;
+$breakpoint-desktop-min: 1500px;
+
+$font-size-base: 16px;
+
+$tablet-and-bigger: '(min-width: #{math.div($breakpoint-tablet-min, $font-size-base)}rem)';
+$laptop-and-bigger: '(min-width: #{math.div($breakpoint-laptop-min, $font-size-base)}rem)';
+$desktop-and-bigger: '(min-width: #{math.div($breakpoint-desktop-min, $font-size-base)}rem)';
