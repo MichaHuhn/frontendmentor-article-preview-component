@@ -24,7 +24,21 @@ Users should be able to:
 
 ### Screenshots
 
+Desktop:
 
+![](./screenshot-desktop.png)
+
+Desktop active:
+
+![](./screenshot-desktop-active.png)
+
+Mobile:
+
+![](./screenshot-mobile.png)
+
+Mobile active:
+
+![](./screenshot-mobile-active.png)
 
 ### Links
 
