@@ -35,15 +35,13 @@ if (!import.meta.env.PROD) {
 </template>
 
 <style scoped lang="scss">
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   width: 1px;
   height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
   clip: rect(0 0 0 0);
-  position: absolute;
-  display: inline-block;
+  clip-path: inset(50%);
+  white-space: nowrap;
   overflow: hidden;
+  position: absolute;
 }
 </style>
