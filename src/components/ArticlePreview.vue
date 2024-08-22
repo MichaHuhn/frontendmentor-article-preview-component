@@ -68,6 +68,7 @@ article {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: left;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
       
       @media #{$laptop-and-bigger} {
