@@ -31,7 +31,9 @@ if (!import.meta.env.PROD) {
 </script>
 
 <template>
-  <span :class="{ 'visually-hidden': !forceShow }"><slot /></span>
+  <span :class="{ 'visually-hidden': !forceShow }">
+    <slot />
+  </span>
 </template>
 
 <style scoped lang="scss">
