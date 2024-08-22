@@ -42,8 +42,8 @@ Mobile active:
 
 ### Links
 
-- Live site: [Add live site URL here](https://your-live-site-url.com)
-- Challenge solution: [Add solution URL here](https://your-solution-url.com)
+- Live site: <https://michahuhn.github.io/frontendmentor-article-preview-component>
+- Challenge solution: <https://www.frontendmentor.io/solutions/article-preview-component-using-vue-and-headless-ui-w2b1ls86bv>
 
 ## My process
 
