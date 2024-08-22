@@ -27,7 +27,7 @@ import SharePopover from '@/components/SharePopover.vue';
         </div>
         <div>
           <div class="name">Michelle Appleton</div>
-          <div>28 Jun 2020</div>
+          <div class="date">28 Jun 2020</div>
         </div>
         
         <SharePopover class="share-button" />
@@ -100,6 +100,7 @@ article {
     
     p {
       margin-block-start: 0.75rem;
+      color: var(--color-desaturated-dark-blue);
       font-weight: 500;
       line-height: calc(20 / 13 * 1em);
       letter-spacing: calc(0.12 / 16 * 1em);
@@ -127,9 +128,17 @@ article {
     }
     
     .name {
+      color: var(--color-very-dark-grayish-blue);
       font-weight: 700;
       line-height: calc(20 / 13 * 1em);
-      letter-spacing: calc(0.12 / 16 * 1em);
+      letter-spacing: calc(0.12 / 13 * 1em);
+    }
+    
+    .date {
+      color: var(--color-grayish-blue);
+      font-weight: 500;
+      line-height: calc(20 / 13 * 1em);
+      letter-spacing: calc(0.12 / 13 * 1em);
     }
     
     .share-button {
